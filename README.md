@@ -1,7 +1,7 @@
 # Shivam Sharma - Professional Portfolio
 
 **QA Automation Engineer & Test Specialist**  
-5+ Years of Experience in Mobile Robotics & Test Automation
+6+ Years of Experience in Mobile Robotics & Test Automation
 
 ## 🚀 Live Portfolio
 
@@ -9,7 +9,7 @@ This portfolio showcases my professional experience, technical skills, and achie
 
 ## 💼 Professional Summary
 
-- **Experience**: 5+ Years in QA Automation
+- **Experience**: 6+ Years in QA Automation
 - **Current Role**: Senior Software Test Engineer at Oceaneering Mobile Robotics
 - **Specialization**: Mobile Robotics, AGV Testing, Test Automation
 - **Key Achievement**: Reduced manual testing efforts by 50%
