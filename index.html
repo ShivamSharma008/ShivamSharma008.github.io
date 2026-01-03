@@ -363,6 +363,15 @@
             box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
             animation: profilePulse 2s ease-in-out infinite;
             border: 5px solid var(--white);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
 
         @keyframes profilePulse {
@@ -1343,7 +1352,7 @@
             <div class="hero-image">
                 <div class="profile-card">
                     <div class="profile-img">
-                        <i class="fas fa-user"></i>
+                        <img src="profile-photo.png" alt="Shivam Sharma - QA Automation Engineer">
                     </div>
                     <h3>6+ Years Experience</h3>
                     <p style="color: var(--text-light); margin-top: 0.5rem;">
