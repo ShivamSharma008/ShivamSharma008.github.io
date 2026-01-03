@@ -30,8 +30,11 @@
             --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
             --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
             --gradient-5: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            --gradient-6: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+            --gradient-glow: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
             --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             --card-shadow-hover: 0 20px 60px rgba(99, 102, 241, 0.3);
+            --glow-effect: 0 0 20px rgba(99, 102, 241, 0.6), 0 0 40px rgba(99, 102, 241, 0.4);
         }
 
         body {
@@ -1190,11 +1193,22 @@
 
         /* Stats/Achievements Section */
         .stats-section {
-            background: var(--gradient-1);
+            background: var(--gradient-glow);
             padding: 4rem 2rem;
             margin: 5rem 0;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 10px 50px rgba(99, 102, 241, 0.3);
+            animation: sectionGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes sectionGlow {
+            0%, 100% {
+                box-shadow: 0 10px 50px rgba(99, 102, 241, 0.3);
+            }
+            50% {
+                box-shadow: 0 15px 60px rgba(99, 102, 241, 0.5), 0 0 80px rgba(99, 102, 241, 0.2);
+            }
         }
 
         .stats-section::before {
@@ -1223,6 +1237,17 @@
             color: var(--white);
             animation: statFadeIn 1s ease forwards;
             opacity: 0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            padding: 1rem;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .stat-item:hover {
+            transform: scale(1.1) translateY(-10px);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
         }
 
         .stat-item:nth-child(1) { animation-delay: 0.2s; }
@@ -1246,7 +1271,17 @@
             font-weight: 800;
             margin-bottom: 0.5rem;
             line-height: 1;
-            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 255, 255, 0.5);
+            animation: numberGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes numberGlow {
+            0%, 100% {
+                text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 255, 255, 0.5);
+            }
+            50% {
+                text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 0 40px rgba(255, 255, 255, 0.8), 0 0 60px rgba(255, 255, 255, 0.4);
+            }
         }
 
         .stat-label {
@@ -1472,12 +1507,12 @@
             </div>
             <div class="stat-item">
                 <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
-                <div class="stat-number">50+</div>
+                <div class="stat-number">10+</div>
                 <div class="stat-label">Projects Completed</div>
             </div>
             <div class="stat-item">
                 <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
-                <div class="stat-number">50%</div>
+                <div class="stat-number">90%</div>
                 <div class="stat-label">Efficiency Boost</div>
             </div>
             <div class="stat-item">
@@ -1628,7 +1663,7 @@
                     <i class="fas fa-graduation-cap"></i>
                 </div>
                 <div class="education-details">
-                    <h3>Bachelor of Education (B.Ed) - Computer Science</h3>
+                    <h3>Bachelor of Engineering (B.E) - Computer Science</h3>
                     <p><strong>Chandigarh University</strong></p>
                     <p style="color: var(--primary-color); font-weight: 600;">2016 - 2020</p>
                 </div>
@@ -1649,7 +1684,7 @@
                 </div>
                 <div class="education-details">
                     <h3>Secondary Education</h3>
-                    <p><strong>Lawrence Public School - India</strong></p>
+                    <p><strong>Lawrence Public Senior Secondary School</strong></p>
                     <p style="color: var(--primary-color); font-weight: 600;">April 2002 - April 2014</p>
                 </div>
             </div>
