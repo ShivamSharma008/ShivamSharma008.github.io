@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Sharma - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background: #ffffff;
+            font-size: 11pt;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 60px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #6366f1;
+        }
+
+        .header h1 {
+            font-size: 36pt;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .header .title {
+            font-size: 14pt;
+            color: #6366f1;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 10pt;
+            color: #64748b;
+        }
+
+        .contact-info span {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .contact-info span::before {
+            content: '•';
+            color: #6366f1;
+            font-weight: bold;
+        }
+
+        .contact-info span:first-child::before {
+            content: '';
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 16pt;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Professional Summary */
+        .summary {
+            color: #475569;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        /* Experience */
+        .experience-item {
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .company-title {
+            font-size: 13pt;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .duration {
+            font-size: 10pt;
+            color: #6366f1;
+            font-weight: 600;
+        }
+
+        .position {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #475569;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .experience-item ul {
+            margin-left: 20px;
+            color: #475569;
+        }
+
+        .experience-item li {
+            margin-bottom: 5px;
+            line-height: 1.6;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .skill-category {
+            page-break-inside: avoid;
+        }
+
+        .skill-category h3 {
+            font-size: 11pt;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+
+        .skill-list {
+            color: #475569;
+            font-size: 10pt;
+            line-height: 1.7;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+        }
+
+        .education-item h3 {
+            font-size: 12pt;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 3px;
+        }
+
+        .institution {
+            font-size: 11pt;
+            color: #475569;
+            font-style: italic;
+            margin-bottom: 3px;
+        }
+
+        .year {
+            font-size: 10pt;
+            color: #6366f1;
+            font-weight: 500;
+        }
+
+        /* Certifications */
+        .cert-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+            color: #475569;
+        }
+
+        .cert-item::before {
+            content: '✓';
+            color: #6366f1;
+            font-weight: bold;
+            font-size: 12pt;
+        }
+
+        /* Key Achievements */
+        .achievements {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #6366f1;
+        }
+
+        .achievements ul {
+            margin-left: 20px;
+            color: #475569;
+        }
+
+        .achievements li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .resume-container {
+                padding: 0;
+                max-width: 100%;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>SHIVAM SHARMA</h1>
+            <div class="title">Senior Software Test Engineer</div>
+            <div class="contact-info">
+                <span>+91 7340915406</span>
+                <span>shivamapril8@gmail.com</span>
+                <span>Chandigarh, India</span>
+                <span>linkedin.com/in/shivam-sharma-064101171</span>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <div class="summary">
+                Results-driven Senior Software Test Engineer with 6+ years of expertise in test automation, mobile robotics, and quality assurance. Currently leading test automation initiatives at Oceaneering Mobile Robotics for AGV (Automatic Guided Vehicles) systems. Proven track record of reducing testing cycles by 50%, achieving 95% automation coverage, and implementing cutting-edge CI/CD pipelines. Expert in Selenium, Java, Python, Robot Framework, and Kubernetes-based microservices testing. Strong background in MQTT/Kafka messaging systems, API testing, and DevOps practices.
+            </div>
+        </div>
+
+        <!-- Key Achievements -->
+        <div class="section">
+            <div class="section-title">Key Achievements</div>
+            <div class="achievements">
+                <ul>
+                    <li><strong>50% Faster Testing:</strong> Reduced regression testing cycle from 8 hours to 4 hours through parallel execution strategies</li>
+                    <li><strong>95% Automation Coverage:</strong> Increased test automation coverage from 60% to 95%, creating 600+ automated test cases</li>
+                    <li><strong>35% Defect Reduction:</strong> Deployed MQTT/Kafka monitoring systems reducing production defect leakage by 35%</li>
+                    <li><strong>73% Time Savings:</strong> Cut nightly build time from 45 minutes to 12 minutes via CI/CD optimization</li>
+                    <li><strong>Leadership:</strong> Currently mentoring 3 junior test engineers in advanced automation frameworks</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="company-title">Oceaneering Mobile Robotics</div>
+                    <div class="duration">Jan 2025 - Present</div>
+                </div>
+                <div class="position">Senior Software Test Engineer | Chandigarh, India</div>
+                <ul>
+                    <li>Leading automation strategy covering 95% of robotics fleet testing scenarios for AGV systems</li>
+                    <li>Implementing cutting-edge CI/CD pipelines reducing deployment time by 40%</li>
+                    <li>Architecting microservices testing framework for Kubernetes-based AGV control systems</li>
+                    <li>Mentoring 3 junior test engineers in Robot Framework, Python BDD, and advanced automation practices</li>
+                    <li>Establishing quality gates and best practices for mobile robotics software testing</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="company-title">Oceaneering Mobile Robotics</div>
+                    <div class="duration">Aug 2022 - Dec 2024</div>
+                </div>
+                <div class="position">Software Test Engineer | Chandigarh, India</div>
+                <ul>
+                    <li>Reduced regression testing cycle from 8 hours to 4 hours (50% faster) via parallel execution frameworks</li>
+                    <li>Increased test automation coverage from 60% to 95%, creating 600+ automated test cases</li>
+                    <li>Deployed MQTT/Kafka monitoring reducing defect leakage by 35% in production environments</li>
+                    <li>Cut nightly test build time from 45 mins to 12 mins through CI/CD optimization</li>
+                    <li>Developed custom Robot Framework libraries for AGV-specific test scenarios and IoT device testing</li>
+                    <li>Implemented API testing strategies using Postman, REST Assured, and GraphQL</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="company-title">Cognizant Technology Solutions</div>
+                    <div class="duration">Jul 2021 - Aug 2022</div>
+                </div>
+                <div class="position">Test Analyst | India</div>
+                <ul>
+                    <li>Executed comprehensive test scenarios and test cases for enterprise applications</li>
+                    <li>Performed functional, smoke, and regression testing across multiple projects</li>
+                    <li>Collaborated with cross-functional teams including developers, business analysts, and project managers</li>
+                    <li>Maintained quality standards and ensured timely delivery of projects</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="company-title">Cognizant Technology Solutions</div>
+                    <div class="duration">Aug 2020 - Jul 2021</div>
+                </div>
+                <div class="position">Test Analyst Trainee | India</div>
+                <ul>
+                    <li>Completed intensive training in test automation frameworks including Selenium WebDriver and Java</li>
+                    <li>Gained hands-on experience with TestNG, Maven, BDD (Cucumber), and Page Object Model design patterns</li>
+                    <li>Developed foundation in testing best practices, SDLC, and STLC methodologies</li>
+                    <li>Contributed to real-world testing projects and automation framework development</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="company-title">Cognizant Technology Solutions</div>
+                    <div class="duration">Jan 2020 - Aug 2020</div>
+                </div>
+                <div class="position">Intern | India</div>
+                <ul>
+                    <li>Started professional journey in software testing and quality assurance</li>
+                    <li>Learned fundamentals of QA processes, test case creation, and execution</li>
+                    <li>Assisted in test case creation, execution, and defect tracking</li>
+                    <li>Gained exposure to enterprise testing environments and Agile methodologies</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Test Automation</h3>
+                    <div class="skill-list">Selenium WebDriver, Java, TestNG, Maven, Cucumber, BDD, POM, Protractor, Appium, Robot Framework</div>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming & Scripting</h3>
+                    <div class="skill-list">Java, Python, Python BDD Behave, JavaScript, TypeScript, Groovy, Shell Scripting</div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & CI/CD</h3>
+                    <div class="skill-list">Jenkins, GitHub, GitLab, Git, Docker, Kubernetes, CI/CD Pipelines</div>
+                </div>
+                <div class="skill-category">
+                    <h3>Database & Messaging</h3>
+                    <div class="skill-list">MSSQL, MySQL, PostgreSQL, MongoDB, MQTT, Kafka, RabbitMQ, Redis</div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & Monitoring</h3>
+                    <div class="skill-list">AWS, Azure Cloud, Grafana, Prometheus, ELK Stack, Splunk</div>
+                </div>
+                <div class="skill-category">
+                    <h3>Testing Methodologies</h3>
+                    <div class="skill-list">Functional, Smoke, Regression, Integration, API, Performance, Manual Testing, SDLC, STLC</div>
+                </div>
+                <div class="skill-category">
+                    <h3>Project Management</h3>
+                    <div class="skill-list">Azure DevOps, Jira, Confluence, Agile, Scrum, Kanban, TestRail</div>
+                </div>
+                <div class="skill-category">
+                    <h3>Specialized Skills</h3>
+                    <div class="skill-list">Mobile Robotics, AGV Testing, IoT Testing, REST API, GraphQL, Microservices, Postman, SoapUI</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="education-item">
+                <h3>Bachelor of Engineering (B.E.) - Computer Science</h3>
+                <div class="institution">Chandigarh University</div>
+                <div class="year">2016 - 2020</div>
+            </div>
+            <div class="education-item">
+                <h3>Senior Secondary Education</h3>
+                <div class="institution">Shishu Niketan Public School</div>
+                <div class="year">2014 - 2016</div>
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="section">
+            <div class="section-title">Certifications</div>
+            <div class="cert-item">Selenium + JAVA Certified Professional</div>
+        </div>
+    </div>
+</body>
+</html>
+
