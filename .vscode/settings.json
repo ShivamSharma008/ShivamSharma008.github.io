@@ -1,0 +1,20 @@
+{
+  "cucumberautocomplete.steps": [
+    "src/steps/**/*.ts"
+  ],
+  "cucumberautocomplete.syncfeatures": "src/features/**/*.feature",
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "cucumberautocomplete.smartSnippets": true,
+  "cucumberautocomplete.customParameters": [],
+  "cucumberautocomplete.formatConfOverride": {
+    "And": 3,
+    "But": 3
+  },
+  "editor.quickSuggestions": {
+    "comments": false,
+    "strings": true,
+    "other": true
+  },
+  "typescript.preferences.importModuleSpecifier": "relative"
+}
+

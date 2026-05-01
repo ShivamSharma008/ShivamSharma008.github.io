@@ -1,0 +1,47 @@
+{
+  "name": "shivam-sharma-automation-framework",
+  "version": "2.0.0",
+  "description": "Shivam Sharma – Automation Test Framework | Playwright BDD with Cucumber, MCP & Allure Reports",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cucumber-js",
+    "test:headed": "npx cross-env HEADLESS=false npx cucumber-js",
+    "test:headless": "npx cross-env HEADLESS=true npx cucumber-js",
+    "test:smoke": "npx cucumber-js --profile smoke",
+    "test:negative": "npx cucumber-js --profile negative",
+    "test:login": "npx cucumber-js --profile login",
+    "test:practice": "npx cucumber-js --profile practice",
+    "test:exceptions": "npx cucumber-js --profile exceptions",
+    "test:jsdelays": "npx cucumber-js --profile jsdelays",
+    "test:mcp": "npx cucumber-js --profile mcp",
+    "test:parallel": "npx cucumber-js --profile parallel",
+    "test:single": "npx cucumber-js --name",
+    "test:tag": "npx cucumber-js --tags",
+    "report:generate": "npx allure generate allure-results --clean -o allure-report",
+    "report:open": "npx allure open allure-report",
+    "report": "npm run report:generate && npm run report:open",
+    "clean": "rimraf allure-results allure-report test-results dist"
+  },
+  "keywords": [
+    "playwright",
+    "cucumber",
+    "bdd",
+    "mcp",
+    "allure",
+    "automation"
+  ],
+  "author": "Shivam Sharma",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.8.2",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "allure-commandline": "^2.38.1",
+    "allure-cucumberjs": "^3.7.1",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.4.2",
+    "playwright": "^1.59.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
