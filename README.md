@@ -1,208 +1,262 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/Built_With-Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" />
-  <img src="https://img.shields.io/badge/Node.js-22.x-339933?style=for-the-badge&logo=node.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Export-Excel%20%7C%20Word%20%7C%20PDF%20%7C%20HTML-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Tests-12%2F12%20Passing-brightgreen?style=for-the-badge" />
-</p>
+<div align="center">
 
-<h1 align="center">🧪 Smart Test Evidence Recorder (STER)</h1>
+<!-- Animated-style banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1b27,100:4f8cff&height=220&section=header&text=🧪%20STER&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Smart%20Test%20Evidence%20Recorder&descSize=22&descAlignY=55&descColor=9aa3b2" width="100%" />
 
-<p align="center">
-  <strong>Kill the Alt-Tab → Screenshot → Paste → Rename loop forever.</strong><br/>
-  <em>An offline, cross-platform, MCP-powered test evidence tool built for Manual QA Engineers.</em>
-</p>
+<br/>
 
-<p align="center">
-  <a href="#-quick-start">Quick Start</a> •
-  <a href="#-features">Features</a> •
-  <a href="#-how-it-works">How It Works</a> •
-  <a href="#-export-formats">Exports</a> •
-  <a href="#-keyboard-shortcuts">Shortcuts</a> •
-  <a href="#-architecture">Architecture</a> •
-  <a href="#-roadmap">Roadmap</a>
-</p>
+### 💀 RIP to the Screenshot → Alt-Tab → Paste → Rename loop
 
----
+<br/>
 
-## 😤 The Problem
+<img src="https://img.shields.io/badge/⚡_ONE_HOTKEY-Capture_Everything-4f8cff?style=for-the-badge&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/📊_EXPORT-Excel_•_Word_•_PDF_•_HTML-3ec77a?style=for-the-badge&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/🔒_OFFLINE-Nothing_Leaves_Your_Machine-ff5b6e?style=for-the-badge&labelColor=0d1117" />
 
-Every manual tester knows this painful loop:
+<br/><br/>
 
-```
-📸 Take screenshot  →  Alt+Tab  →  Open Excel  →  Paste  →  Resize  →  
-Type step  →  Type expected  →  Type actual  →  Alt+Tab back  →  Repeat...
-```
+<img src="https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white" />
+<img src="https://img.shields.io/badge/Node.js_22-339933?style=flat-square&logo=node.js&logoColor=white" />
+<img src="https://img.shields.io/badge/Tests-12%2F12_Passing-brightgreen?style=flat-square" />
+<img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" />
+<img src="https://img.shields.io/badge/Windows_%7C_macOS_%7C_Linux-lightgrey?style=flat-square" />
 
-> **~70–80% of a manual tester's time goes into documentation, not actual testing.**
+<br/><br/>
 
-This causes:
-- 🔄 Heavy context switching
-- 🐛 Human errors in evidence
-- 😩 Tester fatigue & burnout
-- 📉 Inconsistent reports across teams
-- ⏱️ Hours wasted on formatting instead of testing
+> **An offline, cross-platform, MCP-powered test evidence tool**
+> **built _for_ Manual QA Engineers, _by_ a Manual QA Engineer.**
+
+<br/>
+
+[⚡ Quick Start](#-quick-start) · [✨ Features](#-what-you-get) · [🎬 Demo Flow](#-how-it-works) · [📦 Exports](#-export-formats) · [🗺️ Roadmap](#%EF%B8%8F-roadmap)
 
 ---
 
-## 💡 The Solution
+</div>
 
-**STER** eliminates the entire loop with **one hotkey**:
+<br/>
+
+## 😤 The Pain (You Already Know This)
 
 ```
-Press Ctrl+Shift+S → Screenshot captured, numbered, timestamped, context-tagged → Done.
+📸 Screenshot → Alt+Tab → Open Excel → Paste → Resize →
+✍️  Type step → Type expected → Type actual → Alt+Tab back →
+🔁 Repeat... 30+ times per test case
 ```
 
-When you're finished testing, hit **Ctrl+Shift+E** → choose Excel, Word, PDF, or HTML → get a **complete, audit-ready test evidence report** with embedded screenshots, auto-calculated pass rates, and professional formatting.
+<div align="center">
 
-**Zero copy-paste. Zero Alt-Tab. Zero manual formatting.**
+| 😩 Before STER | ⚡ After STER |
+|:---:|:---:|
+| 25–40 min per test case | **8–12 min** |
+| 15–25 context switches | **0–2** |
+| Manual formatting (10+ min) | **Instant** |
+| Inconsistent across testers | **Standardized** |
+| Frequent human errors | **Near zero** |
+| Tester burnout 📉 | **Happy testers** 📈 |
+
+</div>
+
+> 💡 **70-80% of a manual tester's time goes into documentation, not testing.**
+> STER gives you that time back.
 
 ---
 
-## ✨ Features
+<br/>
 
-### 🎯 Core (MVP — Working Now)
-| Feature | Description |
-|---------|-------------|
-| ⌨️ **One-hotkey capture** | `Ctrl+Shift+S` — screenshot + auto-number + timestamp + context tag |
-| 📋 **Inline step editing** | Edit description, expected, actual results right in the UI |
-| ✅ **Status marking** | Pass / Fail / Blocked / Not Run — via hotkey or dropdown |
-| 📊 **4 export formats** | Excel (.xlsx), Word (.docx), PDF, single-file HTML |
-| 👤 **Dynamic "Recorded By"** | Auto-detected from OS user, overridable per session, never hardcoded |
-| 🔒 **Fully offline** | Nothing leaves your machine. Ever. |
-| 💾 **Crash-safe** | Atomic JSON persistence after every single change |
-| 🖥️ **Always-on-top recorder bar** | Floating 460×88 mini toolbar that never gets in the way |
-| 🌍 **Cross-platform** | Windows, macOS, Linux |
-| 🧹 **Clean UX** | No SHA-256 hashes, no session IDs — all internal integrity stays hidden |
+<div align="center">
 
-### 🧠 Intelligent (MCP Context Layer)
-| Feature | Description |
-|---------|-------------|
-| 🔗 **Context binding** | Every screenshot is tagged with active app, OS, locale, timezone |
-| 📝 **Auto-suggested steps** | Step descriptions auto-generated from context |
-| 📊 **Auto-calculated summary** | Pass/fail counts & percentages computed automatically |
-| 🛡️ **Tamper-evident** | SHA-256 hash per screenshot in hidden Manifest sheet |
+## ⚡ The Fix — One Hotkey Changes Everything
 
-### 🏢 Enterprise-Ready
-| Feature | Description |
-|---------|-------------|
-| 👥 **Multi-tester safe** | Per-user identity persistence across sessions |
-| 📁 **Structured storage** | Each session in its own directory with artifacts |
-| 🔐 **Data isolation** | Per-machine, per-user config — no cross-contamination |
-| 📋 **Audit-grade reports** | Professional output accepted by clients, auditors, compliance |
+<br/>
+
+```
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║   Press  Ctrl + Shift + S                                    ║
+║                                                              ║
+║   → Screenshot captured ✓                                    ║
+║   → Auto-numbered ✓                                          ║
+║   → Timestamped ✓                                            ║
+║   → Context-tagged ✓                                         ║
+║   → Saved to session ✓                                       ║
+║                                                              ║
+║   You didn't leave your app. You didn't open Excel.          ║
+║   You didn't paste anything. It just... worked.              ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+```
+
+</div>
 
 ---
+
+<br/>
+
+## ✨ What You Get
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🎯 Core Power
+- ⌨️ **One-hotkey capture** — `Ctrl+Shift+S`
+- 📋 **Inline step editing** — edit right in the UI
+- ✅ **Pass / Fail / Blocked** — hotkey or dropdown
+- 📊 **4 export formats** — xlsx, docx, pdf, html
+- 👤 **Dynamic "Recorded By"** — auto from OS, never hardcoded
+- 🔒 **100% offline** — zero telemetry, zero cloud
+- 💾 **Crash-safe** — atomic saves after every change
+- 🖥️ **Floating toolbar** — always-on-top, never in the way
+
+</td>
+<td width="50%" valign="top">
+
+### 🧠 Smart Features
+- 🔗 **Context binding** — tags active app, OS, locale, timezone
+- 📝 **Auto-suggested steps** — generated from context
+- 📊 **Auto-calculated summary** — pass/fail counts & %
+- 🛡️ **Tamper-evident** — SHA-256 hashes (hidden from UI)
+- 👥 **Multi-tester safe** — per-user identity persistence
+- 📁 **Structured storage** — each session isolated
+- 🌍 **Cross-platform** — Windows, macOS, Linux
+- 📋 **Audit-grade** — accepted by clients & compliance
+
+</td>
+</tr>
+</table>
+
+---
+
+<br/>
 
 ## 🚀 Quick Start
 
 ```powershell
-# Clone
-git clone https://github.com/ShivamSharma008/Smart-Test-Evidence-Recorder.git
-cd Smart-Test-Evidence-Recorder
-
-# Install
+git clone https://github.com/ShivamSharma008/ShivamSharma008.github.io.git
+cd ShivamSharma008.github.io
 npm install
-
-# Test (all 12 tests pass — no display required)
-npm test
-
-# Launch
-npm start
+npm test          # 12/12 ✅
+npm start         # 🚀 Launch
 ```
 
-### Build Installers
+<details>
+<summary>📦 Build installers for distribution</summary>
+
 ```powershell
-npm run build:win      # Windows → NSIS .exe
-npm run build:mac      # macOS → .dmg
-npm run build:linux    # Linux → AppImage
+npm run build:win      # → NSIS .exe
+npm run build:mac      # → .dmg
+npm run build:linux    # → AppImage
 ```
+
+</details>
 
 ---
+
+<br/>
 
 ## 🎬 How It Works
 
+<div align="center">
+
 ```
-┌─────────────────────────────────────────────────────┐
-│  1. START SESSION                                    │
-│     Enter: Tester Name, Project, Test Case, Env     │
-│     → "Recorded By" auto-detected from OS           │
-├─────────────────────────────────────────────────────┤
-│  2. TEST & CAPTURE                                   │
-│     Test your app normally                           │
-│     Press Ctrl+Shift+S anytime → screenshot taken   │
-│     → Auto-numbered, timestamped, context-tagged    │
-├─────────────────────────────────────────────────────┤
-│  3. MARK & EDIT                                      │
-│     Ctrl+Shift+P → Mark Pass                        │
-│     Ctrl+Shift+F → Mark Fail                        │
-│     Edit steps inline in the UI                      │
-├─────────────────────────────────────────────────────┤
-│  4. EXPORT                                           │
-│     Ctrl+Shift+E → Choose format & location         │
-│     → Complete evidence report generated             │
-│     → Screenshots embedded, summary auto-calculated │
-└─────────────────────────────────────────────────────┘
+    ┌───────────────┐         ┌───────────────┐         ┌───────────────┐         ┌───────────────┐
+    │               │         │               │         │               │         │               │
+    │  1️⃣  START    │────────▶│  2️⃣  CAPTURE  │────────▶│  3️⃣  MARK     │────────▶│  4️⃣  EXPORT   │
+    │               │         │               │         │               │         │               │
+    │  Enter name,  │         │  Test your    │         │  Ctrl+Shift+P │         │  Ctrl+Shift+E │
+    │  project,     │         │  app normally │         │  = Pass ✅     │         │  = Save as    │
+    │  test case,   │         │               │         │               │         │  xlsx / docx  │
+    │  environment  │         │  Ctrl+Shift+S │         │  Ctrl+Shift+F │         │  pdf / html   │
+    │               │         │  = Capture 📸  │         │  = Fail ❌     │         │               │
+    │  "Recorded    │         │               │         │               │         │  Screenshots  │
+    │   By" = auto  │         │  Auto-number  │         │  Edit inline  │         │  embedded ✓   │
+    │   from OS 👤  │         │  + timestamp  │         │  anytime      │         │  Summary      │
+    │               │         │  + context    │         │               │         │  auto-calc ✓  │
+    │               │         │               │         │               │         │               │
+    └───────────────┘         └───────────────┘         └───────────────┘         └───────────────┘
 ```
 
+</div>
+
 ---
+
+<br/>
 
 ## 📦 Export Formats
 
-| Format | What You Get |
-|--------|-------------|
-| **Excel (.xlsx)** | Summary sheet + Steps with embedded screenshots + color-coded status + hidden Manifest for integrity |
-| **Word (.docx)** | Professional document with headings, meta info, step-by-step evidence, embedded images |
-| **PDF** | Printable A4 report with cover page, step pages with screenshots, footer |
-| **HTML** | Single-file report with base64-embedded images — open anywhere, share via email |
+<div align="center">
 
-Every report includes:
-```
-Test Evidence Recorded By: <Dynamic Tester Name>
-Generated Using: Smart Test Evidence Recorder
-Designed & Developed by Shivam Sharma
-```
+| | Format | What You Get |
+|:---:|:---|:---|
+| 📗 | **Excel (.xlsx)** | Summary sheet • Steps with embedded screenshots • Color-coded status • Hidden integrity manifest |
+| 📘 | **Word (.docx)** | Professional document • Headings • Step-by-step evidence • Embedded images |
+| 📕 | **PDF** | Printable A4 • Cover page • Step pages with screenshots • Professional footer |
+| 🌐 | **HTML** | Single-file • Base64-embedded images • Open anywhere • Email-ready |
+
+</div>
+
+<br/>
+
+> Every report carries this footer:
+> ```
+> Test Evidence Recorded By: <Your Name — dynamic>
+> Generated Using: Smart Test Evidence Recorder
+> Designed & Developed by Shivam Sharma
+> ```
 
 ---
+
+<br/>
 
 ## ⌨️ Keyboard Shortcuts
 
-| Action | Windows / Linux | macOS |
-|--------|----------------|-------|
-| 📸 Capture Screenshot | `Ctrl+Shift+S` | `⌘⇧S` |
-| ✅ Mark Pass | `Ctrl+Shift+P` | `⌘⇧P` |
-| ❌ Mark Fail | `Ctrl+Shift+F` | `⌘⇧F` |
-| 📊 End & Export | `Ctrl+Shift+E` | `⌘⇧E` |
+<div align="center">
+
+| | Action | Windows / Linux | macOS |
+|:---:|:---|:---:|:---:|
+| 📸 | **Capture Screenshot** | `Ctrl+Shift+S` | `⌘⇧S` |
+| ✅ | **Mark Pass** | `Ctrl+Shift+P` | `⌘⇧P` |
+| ❌ | **Mark Fail** | `Ctrl+Shift+F` | `⌘⇧F` |
+| 📊 | **End & Export** | `Ctrl+Shift+E` | `⌘⇧E` |
+
+</div>
 
 ---
+
+<br/>
 
 ## 🏗️ Architecture
 
 ```
-┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
-│   Renderer UI    │────▶│   Electron IPC    │────▶│  Core Services   │
-│   (HTML/CSS/JS)  │◀────│   (Main Process)  │◀────│  (Pure Node.js)  │
-└──────────────────┘     └──────────────────┘     └──────────────────┘
- index.html               main.js                  identity.js
- recorder.html             preload.js               sessionService.js
- renderer.js               Global shortcuts         screenshotService.js
-                           Save dialogs             contextManager.js
-                                                    exporter.js
+┌──────────────────────┐     ┌──────────────────────┐     ┌──────────────────────┐
+│                      │     │                      │     │                      │
+│    🖥️  RENDERER UI   │◀───▶│   ⚡ ELECTRON IPC    │◀───▶│   🧠 CORE SERVICES   │
+│                      │     │                      │     │                      │
+│  index.html          │     │  main.js             │     │  identity.js         │
+│  recorder.html       │     │  preload.js          │     │  sessionService.js   │
+│  renderer.js         │     │  Global shortcuts    │     │  screenshotService   │
+│                      │     │  Save dialogs        │     │  contextManager.js   │
+│                      │     │                      │     │  exporter.js         │
+│                      │     │                      │     │                      │
+└──────────────────────┘     └──────────────────────┘     └──────────────────────┘
 ```
 
-### Project Layout
+<details>
+<summary>📂 Full project layout</summary>
+
 ```
 src/
-  main/            Electron main process, IPC, global shortcuts
-    main.js
-    preload.js
-  renderer/        UI (setup, steps grid, always-on-top recorder bar)
-    index.html
-    renderer.js
-    recorder.html
-  core/            Pure-Node services (testable without Electron)
+  main/            Electron main process
+    main.js          Window mgmt, IPC, global shortcuts
+    preload.js       Safe contextBridge API
+  renderer/        UI layer
+    index.html       Session setup + steps grid
+    renderer.js      Frontend logic
+    recorder.html    Always-on-top floating bar
+  core/            Pure Node.js services (testable without Electron)
     identity.js           Dynamic "Recorded By" resolution
-    sessionService.js     Step CRUD + atomic persistence
+    sessionService.js     Step CRUD + atomic JSON persistence
     screenshotService.js  Capture + SHA-256 + headless fallback
     contextManager.js     MCP-aligned context snapshot
     exporter.js           Excel / Word / PDF / HTML
@@ -210,145 +264,178 @@ tests/
     e2e.test.js           12 end-to-end tests
 ```
 
+</details>
+
 ---
 
-## 🧪 Test Suite
+<br/>
+
+## 🧪 Tests — 12/12 Green
 
 ```
  PASS  tests/e2e.test.js
-  Identity (dynamic Recorded By)
-    ✓ returns OS user by default — never hardcoded
-    ✓ rememberTester persists per OS user
-  SessionService
-    ✓ adds, updates, deletes and re-indexes steps
-    ✓ markLastStatus updates the most recent step
-    ✓ persists session.json atomically
-  ScreenshotService
-    ✓ captures, hashes and writes a PNG (with fallback)
-  ContextManager (MCP snapshot)
-    ✓ emits a snapshot with required keys
-  Exporter (Excel / PDF / HTML / Word)
-    ✓ Excel export contains tester name & embeds images
-    ✓ HTML export inlines screenshots and dynamic footer
-    ✓ PDF export is a valid non-empty file
-    ✓ Word export produces a valid .docx with dynamic footer
-    ✓ rejects unsupported formats
 
-Tests:  12 passed, 12 total
+  Identity (dynamic Recorded By)
+    ✅ returns OS user by default — never hardcoded
+    ✅ rememberTester persists per OS user
+
+  SessionService
+    ✅ adds, updates, deletes and re-indexes steps
+    ✅ markLastStatus updates the most recent step
+    ✅ persists session.json atomically
+
+  ScreenshotService
+    ✅ captures, hashes and writes a PNG (with fallback)
+
+  ContextManager (MCP snapshot)
+    ✅ emits a snapshot with required keys
+
+  Exporter
+    ✅ Excel — tester name, embedded images, summary
+    ✅ HTML — inline screenshots, dynamic footer, no SHA-256
+    ✅ PDF — valid file with %PDF- header
+    ✅ Word — valid .docx, dynamic footer, embedded images
+    ✅ Rejects unsupported formats
+
+  Tests:  12 passed, 12 total ✅
 ```
 
 ---
 
-## 🔐 Where Data Lives
+<br/>
 
-| OS | Location |
-|----|----------|
-| Windows | `%APPDATA%\STER\sessions\<sessionId>\` |
-| macOS | `~/Library/Application Support/STER/sessions/<sessionId>/` |
-| Linux | `~/.config/STER/sessions/<sessionId>/` |
+## 🎯 Who Is This For?
 
-Each session contains `session.json` + `artifacts/*.png`. **Nothing leaves the machine.**
+<div align="center">
 
----
+| You Are A... | STER Helps You... |
+|:---:|:---|
+| 🧪 **Manual Tester** | Stop wasting 80% of time on documentation |
+| 👨‍💼 **QA Lead** | Get consistent, standardized evidence from every tester |
+| 📊 **Manager** | Instant visibility into test execution quality |
+| 🔍 **Auditor** | Tamper-evident, timestamped, hash-verified evidence |
+| 🤝 **Client** | Professional, clean reports — no more messy screenshots |
 
-## 📈 Impact & Value
-
-| Metric | Before STER | After STER |
-|--------|-----------|-----------|
-| ⏱️ Time per test case | 25–40 min | 8–12 min |
-| 🔄 Context switches | 15–25 per case | 0–2 per case |
-| 🐛 Documentation errors | Frequent | Near zero |
-| 📋 Report formatting | Manual, 10+ min | Instant, automated |
-| 😩 Tester fatigue | High | Significantly reduced |
-| 📊 Report consistency | Varies by person | Standardized |
+</div>
 
 ---
 
-## 🎯 Real-World Use Cases
+<br/>
 
-| Scenario | How STER Helps |
-|----------|---------------|
-| **Smoke Testing** | Rapid capture during quick verification — evidence in minutes |
-| **Regression Testing** | Bulk capture across test suites with consistent formatting |
-| **Client Demos** | Professional reports generated instantly for stakeholders |
-| **Audit / Compliance** | Tamper-evident, timestamped evidence with integrity hashes |
-| **Training / Learning** | Capture screenshots from Udemy, tutorials, or documentation |
-| **Bug Reporting** | Step-by-step reproduction evidence with screenshots |
+## 🎯 Real-World Scenarios
+
+| Scenario | Time Saved |
+|:---|:---|
+| 🔥 **Smoke Testing** — rapid verification with instant evidence | ~70% faster |
+| 🔄 **Regression Testing** — bulk capture, consistent reports | ~65% faster |
+| 🎤 **Client Demo** — professional reports generated on the spot | Instant |
+| 📋 **Audit Submission** — tamper-evident, compliant evidence | Hours → Minutes |
+| 📚 **Training Notes** — screenshots from Udemy/tutorials | Effortless |
+| 🐛 **Bug Reports** — step-by-step reproduction with screenshots | ~60% faster |
 
 ---
+
+<br/>
+
+## 🔐 Your Data Stays Yours
+
+| OS | Storage Location |
+|:---|:---|
+| 🪟 Windows | `%APPDATA%\STER\sessions\<sessionId>\` |
+| 🍎 macOS | `~/Library/Application Support/STER/sessions/<sessionId>/` |
+| 🐧 Linux | `~/.config/STER/sessions/<sessionId>/` |
+
+> Each session → `session.json` + `artifacts/*.png`
+> **Nothing leaves the machine. No cloud. No telemetry. Ever.**
+
+---
+
+<br/>
 
 ## 🗺️ Roadmap
 
-### ✅ Phase 1: MVP (Complete)
-- [x] Screenshot capture with hotkeys
-- [x] Step CRUD with inline editing
-- [x] Dynamic "Recorded By"
-- [x] 4 export formats (Excel, Word, PDF, HTML)
-- [x] Always-on-top recorder bar
-- [x] Crash-safe persistence
-- [x] Cross-platform support
-- [x] 12/12 e2e tests passing
+<div align="center">
 
-### 🔜 Phase 2: MCP & Intelligence
-- [ ] Full MCP server (Resources, Tools, Prompts)
-- [ ] AI-assisted step drafting
-- [ ] Auto-defect description generation
-- [ ] Session templates & presets
-- [ ] Bulk import from test management tools
+```
+  ✅ PHASE 1 — MVP                    🔜 PHASE 2 — Intelligence           🚀 PHASE 3 — Enterprise
+  ━━━━━━━━━━━━━━━━━                   ━━━━━━━━━━━━━━━━━━━━━━              ━━━━━━━━━━━━━━━━━━━━
+  ✓ Hotkey capture                     ○ Full MCP server                   ○ Team dashboard
+  ✓ 4 export formats                   ○ AI-assisted step drafting         ○ JIRA / Azure DevOps
+  ✓ Dynamic "Recorded By"             ○ Auto-defect generation            ○ Video recording
+  ✓ Floating recorder bar              ○ Session templates                 ○ OCR auto-validation
+  ✓ Crash-safe persistence             ○ Test mgmt import                  ○ NLP comparison
+  ✓ Cross-platform                                                         ○ Cloud sync (encrypted)
+```
 
-### 🚀 Phase 3: Enterprise & AI
-- [ ] Team dashboard with session rollups
-- [ ] JIRA / Azure DevOps integration
-- [ ] Video recording alongside screenshots
-- [ ] OCR-based auto-validation
-- [ ] NLP-driven expected vs actual comparison
-- [ ] Cloud sync (optional, encrypted)
+</div>
 
 ---
 
-## 🧩 MCP Integration (Phase 2)
+<br/>
 
-The `ContextManager` is the seed of a full MCP server exposing:
+## 🧩 MCP Integration (Coming in Phase 2)
+
+<details>
+<summary>🔮 Click to see the MCP server design</summary>
+
+<br/>
+
+The `ContextManager` is the seed of a full MCP server:
 
 | Type | Endpoint | Purpose |
-|------|----------|---------|
-| **Resource** | `session://current` | Current session state |
-| **Resource** | `step://{n}` | Individual step data |
-| **Resource** | `screenshot://{id}` | Screenshot binary |
-| **Resource** | `environment://host` | Host environment info |
-| **Tool** | `capture_screenshot` | Trigger capture programmatically |
-| **Tool** | `add_step` | Add a step with metadata |
-| **Tool** | `mark_status` | Set pass/fail/blocked |
-| **Tool** | `export_report` | Generate report |
-| **Prompt** | `draft_step_from_context` | AI-draft a step description |
-| **Prompt** | `draft_defect` | Generate defect report |
-| **Prompt** | `summarize_run` | Summarize test execution |
+|:---|:---|:---|
+| 📦 Resource | `session://current` | Current session state |
+| 📦 Resource | `step://{n}` | Individual step data |
+| 📦 Resource | `screenshot://{id}` | Screenshot binary |
+| 📦 Resource | `environment://host` | Host environment info |
+| 🔧 Tool | `capture_screenshot` | Trigger capture programmatically |
+| 🔧 Tool | `add_step` | Add a step with metadata |
+| 🔧 Tool | `mark_status` | Set pass/fail/blocked |
+| 🔧 Tool | `export_report` | Generate report |
+| 💬 Prompt | `draft_step_from_context` | AI-draft a step description |
+| 💬 Prompt | `draft_defect` | Generate defect report |
+| 💬 Prompt | `summarize_run` | Summarize test execution |
 
-This makes STER drivable by **any MCP-aware assistant** (Claude Desktop, Copilot, in-house LLMs).
+> Makes STER drivable by **any MCP-aware AI** — Claude Desktop, Copilot, in-house LLMs.
+
+</details>
 
 ---
+
+<br/>
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+```
+1. Fork it
+2. git checkout -b feature/amazing-feature
+3. git commit -m 'Add amazing feature'
+4. git push origin feature/amazing-feature
 5. Open a Pull Request
+```
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+MIT — see [LICENSE](LICENSE)
 
 ---
 
-<p align="center">
-  <strong>Designed & Developed with ❤️ by <a href="https://github.com/ShivamSharma008">Shivam Sharma</a></strong><br/>
-  <em>Built from a real pain point. Built for real testers.</em>
-</p>
+<br/>
 
-<p align="center">
-  <sub>If this tool saves you time, consider giving it a ⭐ — it helps other testers find it!</sub>
-</p>
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1b27,100:4f8cff&height=120&section=footer" width="100%" />
+
+<br/>
+
+**Designed & Developed with ❤️ by [Shivam Sharma](https://github.com/ShivamSharma008)**
+
+*Built from a real pain point. Built for real testers.*
+
+<br/>
+
+⭐ **Star this repo if it saves you time** — it helps other testers find it!
+
+</div>
