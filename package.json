@@ -1,0 +1,52 @@
+{
+  "name": "smart-test-evidence-recorder",
+  "version": "1.0.0",
+  "description": "MCP-powered intelligent test evidence recorder for manual QA engineers. Designed & Developed by Shivam Sharma.",
+  "main": "src/main/main.js",
+  "author": "Shivam Sharma",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "test": "jest --runInBand",
+    "build:win": "electron-builder --win --x64",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "docx": "^9.6.1",
+    "exceljs": "^4.4.0",
+    "pdfkit": "^0.15.0",
+    "screenshot-desktop": "^1.15.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "electron": "^40.1.0",
+    "electron-builder": "^24.13.3",
+    "jest": "^29.7.0"
+  },
+  "build": {
+    "appId": "com.shivamsharma.ster",
+    "productName": "Smart Test Evidence Recorder",
+    "files": [
+      "src/**/*",
+      "assets/**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.developer-tools"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Smart Test Evidence Recorder</title>
+<style>
+  :root { --bg:#1f2330; --fg:#eaeef7; --muted:#9aa3b2; --acc:#4f8cff; --pass:#3ec77a; --fail:#ff5b6e; --blocked:#ffb547; }
+  *{box-sizing:border-box} body{margin:0;font-family:Segoe UI,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+  header{padding:16px 24px;background:#161a24;border-bottom:1px solid #0c0f17;display:flex;justify-content:space-between;align-items:center}
+  header h1{margin:0;font-size:18px}
+  header small{color:var(--muted)}
+  main{padding:20px 24px;display:grid;grid-template-columns:360px 1fr;gap:20px}
+  .card{background:#262b3a;border:1px solid #1a1e2a;border-radius:10px;padding:16px}
+  label{display:block;font-size:12px;color:var(--muted);margin:10px 0 4px}
+  input,select,textarea{width:100%;padding:8px 10px;border-radius:6px;border:1px solid #3a4153;background:#1c2030;color:var(--fg);font-size:14px}
+  button{background:var(--acc);color:white;border:0;padding:9px 14px;border-radius:6px;cursor:pointer;font-weight:600}
+  button.secondary{background:#3a4153}
+  button.danger{background:var(--fail)}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{border-bottom:1px solid #2c3142;padding:8px;text-align:left;vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+  .status{padding:2px 8px;border-radius:10px;font-size:11px;font-weight:700}
+  .status.Pass{background:rgba(62,199,122,.18);color:var(--pass)}
+  .status.Fail{background:rgba(255,91,110,.18);color:var(--fail)}
+  .status.Blocked{background:rgba(255,181,71,.18);color:var(--blocked)}
+  .status.Not.Run, .status.Not\\ Run{background:#3a4153;color:var(--muted)}
+  .row{display:flex;gap:8px;align-items:center}
+  .pill{font-size:11px;color:var(--muted)}
+  footer{padding:10px 24px;color:var(--muted);font-size:12px;border-top:1px solid #0c0f17;background:#161a24}
+  .empty{padding:40px;text-align:center;color:var(--muted)}
+  .shortcut{font-family:Consolas,monospace;background:#1c2030;padding:1px 6px;border-radius:4px;border:1px solid #3a4153}
+</style></head>
+<body>
+<header>
+  <div><h1>Smart Test Evidence Recorder</h1><small>Designed &amp; Developed by Shivam Sharma</small></div>
+  <div id="sessionInfo" class="pill">No active session</div>
+</header>
+
+<main>
+  <section class="card" id="setup">
+    <h3 style="margin-top:0">Start Test Session</h3>
+    <label>Recorded By (Tester Name)</label>
+    <input id="testerName" placeholder="Loading..." />
+    <label>Project</label>
+    <input id="project" placeholder="e.g. Acme Banking" />
+    <label>Test Case ID</label>
+    <input id="testCaseId" placeholder="TC-123" />
+    <label>Test Case Title</label>
+    <input id="testCaseTitle" placeholder="Login validation" />
+    <label>Environment</label>
+    <select id="environment"><option>Dev</option><option selected>SIT</option><option>UAT</option><option>Prod</option></select>
+    <div style="margin-top:14px" class="row">
+      <button id="startBtn">▶ Start Session</button>
+      <button id="captureBtn" class="secondary" disabled>📸 Capture</button>
+      <button id="endBtn" class="danger" disabled>⏹ End &amp; Export</button>
+    </div>
+    <p class="pill" style="margin-top:14px">
+      Shortcuts: <span class="shortcut">Ctrl+Shift+S</span> capture ·
+      <span class="shortcut">Ctrl+Shift+P</span> pass ·
+      <span class="shortcut">Ctrl+Shift+F</span> fail ·
+      <span class="shortcut">Ctrl+Shift+E</span> end
+    </p>
+  </section>
+
+  <section class="card" id="stepsCard">
+    <h3 style="margin-top:0">Steps</h3>
+    <div id="stepsContainer" class="empty">No steps yet. Start a session and press <span class="shortcut">Ctrl+Shift+S</span>.</div>
+  </section>
+</main>
+
+<footer>Test Evidence Recorded By the dynamic OS / session user · Generated Using Smart Test Evidence Recorder · © Shivam Sharma</footer>
+
+<script src="renderer.js"></script>
+</body></html>
+
