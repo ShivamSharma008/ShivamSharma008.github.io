@@ -1,0 +1,248 @@
+2026-05-15 19:56:44 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/posts
+2026-05-15 19:56:45 | INFO     | api_client | Response [200]: [
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita 
+2026-05-15 19:56:45 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/posts/1
+2026-05-15 19:56:45 | INFO     | api_client | Response [200]: {
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nrepr
+2026-05-15 19:56:45 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/posts/99999
+2026-05-15 19:56:45 | INFO     | api_client | Response [404]: {}
+2026-05-15 19:56:45 | INFO     | api_client | POST https://jsonplaceholder.typicode.com/posts | Body: {'title': 'Test Post', 'body': 'Test Body', 'userId': 1}
+2026-05-15 19:56:46 | INFO     | api_client | Response [201]: {
+  "title": "Test Post",
+  "body": "Test Body",
+  "userId": 1,
+  "id": 101
+}
+2026-05-15 19:56:46 | INFO     | api_client | PUT https://jsonplaceholder.typicode.com/posts/1 | Body: {'id': 1, 'title': 'Updated Title', 'body': 'Updated Body', 'userId': 1}
+2026-05-15 19:56:46 | INFO     | api_client | Response [200]: {
+  "id": 1,
+  "title": "Updated Title",
+  "body": "Updated Body",
+  "userId": 1
+}
+2026-05-15 19:56:46 | INFO     | api_client | PATCH https://jsonplaceholder.typicode.com/posts/1 | Body: {'title': 'Patched Title'}
+2026-05-15 19:56:47 | INFO     | api_client | Response [200]: {
+  "userId": 1,
+  "id": 1,
+  "title": "Patched Title",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem
+2026-05-15 19:56:47 | INFO     | api_client | DELETE https://jsonplaceholder.typicode.com/posts/1
+2026-05-15 19:56:47 | INFO     | api_client | Response [200]
+2026-05-15 19:56:47 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/posts
+2026-05-15 19:56:47 | INFO     | api_client | Response [200]: [
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita 
+2026-05-15 19:56:47 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/posts/1/comments
+2026-05-15 19:56:47 | INFO     | api_client | Response [200]: [
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "id labore ex et quam laborum",
+    "email": "Eliseo@gardner.biz",
+    "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo
+2026-05-15 19:56:47 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/comments
+2026-05-15 19:56:47 | INFO     | api_client | Response [200]: [
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "id labore ex et quam laborum",
+    "email": "Eliseo@gardner.biz",
+    "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo
+2026-05-15 19:56:47 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/comments
+2026-05-15 19:56:47 | INFO     | api_client | Response [200]: [
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "id labore ex et quam laborum",
+    "email": "Eliseo@gardner.biz",
+    "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo
+2026-05-15 19:56:47 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/users
+2026-05-15 19:56:48 | INFO     | api_client | Response [200]: [
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwen
+2026-05-15 19:56:48 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/users/1
+2026-05-15 19:56:48 | INFO     | api_client | Response [200]: {
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipco
+2026-05-15 19:56:48 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/users/1/todos
+2026-05-15 19:56:48 | INFO     | api_client | Response [200]: [
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "delectus aut autem",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "quis ut nam facilis et officia qui",
+    "completed":
+2026-05-15 19:57:13 | INFO     | login_page | Opening login page
+2026-05-15 19:57:13 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 19:57:14 | INFO     | login_page | Logging in as: standard_user
+2026-05-15 19:57:14 | INFO     | base_page | Filling 'standard_user' into: //input[@id='user-name']
+2026-05-15 19:57:14 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 19:57:14 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 19:57:14 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 19:57:15 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 19:57:15 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 19:57:15 | INFO     | login_page | Opening login page
+2026-05-15 19:57:15 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 19:57:16 | INFO     | login_page | Logging in as: standard_user
+2026-05-15 19:57:16 | INFO     | base_page | Filling 'standard_user' into: //input[@id='user-name']
+2026-05-15 19:57:16 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 19:57:16 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 19:57:16 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 19:57:16 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 19:57:16 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 19:57:16 | INFO     | inventory_page | Adding to cart: Sauce Labs Backpack
+2026-05-15 19:57:16 | INFO     | base_page | Clicking: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 19:57:16 | DEBUG    | wait_helpers | Waiting for element: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 19:57:17 | DEBUG    | wait_helpers | Waiting for element: //span[@class='shopping_cart_badge']
+2026-05-15 19:57:17 | INFO     | login_page | Opening login page
+2026-05-15 19:57:17 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 19:57:18 | INFO     | login_page | Logging in as: standard_user
+2026-05-15 19:57:18 | INFO     | base_page | Filling 'standard_user' into: //input[@id='user-name']
+2026-05-15 19:57:18 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 19:57:18 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 19:57:18 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 19:57:18 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 19:57:18 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 19:57:18 | INFO     | inventory_page | Adding to cart: Sauce Labs Backpack
+2026-05-15 19:57:18 | INFO     | base_page | Clicking: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 19:57:18 | DEBUG    | wait_helpers | Waiting for element: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 19:57:18 | INFO     | inventory_page | Removing from cart: Sauce Labs Backpack
+2026-05-15 19:57:18 | INFO     | base_page | Clicking: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'remove')]
+2026-05-15 19:57:18 | DEBUG    | wait_helpers | Waiting for element: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'remove')]
+2026-05-15 19:57:21 | INFO     | login_page | Opening login page
+2026-05-15 19:57:21 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 19:57:21 | INFO     | login_page | Logging in as: standard_user
+2026-05-15 19:57:21 | INFO     | base_page | Filling 'standard_user' into: //input[@id='user-name']
+2026-05-15 19:57:21 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 19:57:21 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 19:57:21 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 19:57:21 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 19:57:21 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 19:57:21 | INFO     | inventory_page | Sorting products by: za
+2026-05-15 19:57:21 | INFO     | base_page | Selecting 'za' in: //select[@class='product_sort_container']
+2026-05-15 19:57:21 | DEBUG    | wait_helpers | Waiting for element: //select[@class='product_sort_container']
+2026-05-15 19:57:22 | INFO     | login_page | Opening login page
+2026-05-15 19:57:22 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 19:57:23 | INFO     | login_page | Logging in as: standard_user
+2026-05-15 19:57:23 | INFO     | base_page | Filling 'standard_user' into: //input[@id='user-name']
+2026-05-15 19:57:23 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 19:57:23 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 19:57:23 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 19:57:23 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 19:57:23 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 19:57:23 | INFO     | inventory_page | Sorting products by: lohi
+2026-05-15 19:57:23 | INFO     | base_page | Selecting 'lohi' in: //select[@class='product_sort_container']
+2026-05-15 19:57:23 | DEBUG    | wait_helpers | Waiting for element: //select[@class='product_sort_container']
+2026-05-15 19:57:24 | INFO     | login_page | Opening login page
+2026-05-15 19:57:24 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 19:57:31 | INFO     | login_page | Logging in as: standard_user
+2026-05-15 19:57:31 | INFO     | base_page | Filling 'standard_user' into: //input[@id='user-name']
+2026-05-15 19:57:31 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 19:57:31 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 19:57:31 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 19:57:31 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 19:57:31 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 19:57:32 | INFO     | inventory_page | Adding to cart: Sauce Labs Backpack
+2026-05-15 19:57:32 | INFO     | base_page | Clicking: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 19:57:32 | DEBUG    | wait_helpers | Waiting for element: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 19:57:32 | INFO     | inventory_page | Adding to cart: Sauce Labs Bike Light
+2026-05-15 19:57:32 | INFO     | base_page | Clicking: //div[text()='Sauce Labs Bike Light']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 19:57:32 | DEBUG    | wait_helpers | Waiting for element: //div[text()='Sauce Labs Bike Light']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 19:57:32 | DEBUG    | wait_helpers | Waiting for element: //span[@class='shopping_cart_badge']
+2026-05-15 19:57:32 | INFO     | base_page | Clicking: //a[@class='shopping_cart_link']
+2026-05-15 19:57:32 | DEBUG    | wait_helpers | Waiting for element: //a[@class='shopping_cart_link']
+2026-05-15 19:57:32 | INFO     | login_page | Opening login page
+2026-05-15 19:57:32 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 19:57:42 | INFO     | login_page | Logging in as: standard_user
+2026-05-15 19:57:42 | INFO     | base_page | Filling 'standard_user' into: //input[@id='user-name']
+2026-05-15 19:57:42 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 19:57:43 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 19:57:43 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 19:57:43 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 19:57:43 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 19:57:43 | INFO     | inventory_page | Logging out
+2026-05-15 19:57:43 | INFO     | base_page | Clicking: //button[@id='react-burger-menu-btn']
+2026-05-15 19:57:43 | DEBUG    | wait_helpers | Waiting for element: //button[@id='react-burger-menu-btn']
+2026-05-15 19:57:43 | INFO     | base_page | Clicking: //a[@id='logout_sidebar_link']
+2026-05-15 19:57:43 | DEBUG    | wait_helpers | Waiting for element: //a[@id='logout_sidebar_link']
+2026-05-15 19:57:44 | INFO     | login_page | Opening login page
+2026-05-15 19:57:44 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 19:57:54 | INFO     | login_page | Logging in as: standard_user
+2026-05-15 19:57:54 | INFO     | base_page | Filling 'standard_user' into: //input[@id='user-name']
+2026-05-15 19:57:54 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 19:57:54 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 19:57:54 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 19:57:54 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 19:57:54 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 19:57:54 | DEBUG    | wait_helpers | Waiting for element: //span[@class='title']
+2026-05-15 19:57:54 | INFO     | login_page | Opening login page
+2026-05-15 19:57:54 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 19:58:01 | INFO     | login_page | Logging in as: locked_out_user
+2026-05-15 19:58:01 | INFO     | base_page | Filling 'locked_out_user' into: //input[@id='user-name']
+2026-05-15 19:58:01 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 19:58:01 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 19:58:01 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 19:58:01 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 19:58:01 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 19:58:01 | DEBUG    | wait_helpers | Waiting for element: //h3[@data-test='error']
+2026-05-15 19:58:02 | INFO     | login_page | Opening login page
+2026-05-15 19:58:02 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 19:58:04 | INFO     | login_page | Logging in as: invalid_user
+2026-05-15 19:58:04 | INFO     | base_page | Filling 'invalid_user' into: //input[@id='user-name']
+2026-05-15 19:58:04 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 19:58:05 | INFO     | base_page | Filling 'wrong_pass' into: //input[@id='password']
+2026-05-15 19:58:05 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 19:58:05 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 19:58:05 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 19:58:05 | DEBUG    | wait_helpers | Waiting for element: //h3[@data-test='error']
+2026-05-15 19:58:05 | INFO     | login_page | Opening login page
+2026-05-15 19:58:05 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 19:58:07 | INFO     | login_page | Logging in as: 
+2026-05-15 19:58:07 | INFO     | base_page | Filling '' into: //input[@id='user-name']
+2026-05-15 19:58:07 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 19:58:07 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 19:58:07 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 19:58:07 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 19:58:07 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 19:58:07 | DEBUG    | wait_helpers | Waiting for element: //h3[@data-test='error']
+2026-05-15 19:58:08 | INFO     | login_page | Opening login page
+2026-05-15 19:58:08 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 19:58:10 | INFO     | login_page | Logging in as: standard_user
+2026-05-15 19:58:10 | INFO     | base_page | Filling 'standard_user' into: //input[@id='user-name']
+2026-05-15 19:58:10 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 19:58:10 | INFO     | base_page | Filling '' into: //input[@id='password']
+2026-05-15 19:58:10 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 19:58:10 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 19:58:10 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 19:58:10 | DEBUG    | wait_helpers | Waiting for element: //h3[@data-test='error']
+2026-05-15 19:58:10 | INFO     | login_page | Opening login page
+2026-05-15 19:58:10 | INFO     | base_page | Navigating to https://www.saucedemo.com/

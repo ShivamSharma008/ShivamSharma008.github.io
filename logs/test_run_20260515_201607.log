@@ -1,0 +1,9 @@
+2026-05-15 20:16:12 | INFO     | browser_manager | Launching chromium (headless=False)
+2026-05-15 20:16:30 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_navigate_20260515_201630_341689.png
+2026-05-15 20:16:30 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_username_20260515_201630_820585.png
+2026-05-15 20:16:31 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_password_20260515_201631_045998.png
+2026-05-15 20:16:31 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_click_login_20260515_201631_337483.png
+2026-05-15 20:16:31 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_open_menu_20260515_201631_681070.png
+2026-05-15 20:16:32 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_click_logout_20260515_201632_315210.png
+2026-05-15 20:16:32 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\PASS_test_logout_20260515_201632_494278.png
+2026-05-15 20:16:32 | INFO     | browser_manager | Closing browser

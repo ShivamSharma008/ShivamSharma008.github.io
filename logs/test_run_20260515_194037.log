@@ -1,0 +1,26 @@
+2026-05-15 19:40:37 | INFO     | api_client | GET https://reqres.in/api/users?page=1
+2026-05-15 19:40:38 | INFO     | api_client | Response [401]: {"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Create a free key at app.reqres.in and send it as x-api-key.","next_steps":["Go to app.reqres.in/api-
+2026-05-15 19:40:38 | INFO     | api_client | GET https://reqres.in/api/users/2
+2026-05-15 19:40:38 | INFO     | api_client | Response [401]: {"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Create a free key at app.reqres.in and send it as x-api-key.","next_steps":["Go to app.reqres.in/api-
+2026-05-15 19:40:38 | INFO     | api_client | GET https://reqres.in/api/users/99999
+2026-05-15 19:40:39 | INFO     | api_client | Response [401]: {"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Create a free key at app.reqres.in and send it as x-api-key.","next_steps":["Go to app.reqres.in/api-
+2026-05-15 19:40:39 | INFO     | api_client | POST https://reqres.in/api/users | Body: {'name': 'John Doe', 'job': 'QA Engineer'}
+2026-05-15 19:40:40 | INFO     | api_client | Response [401]: {"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Create a free key at app.reqres.in and send it as x-api-key.","next_steps":["Go to app.reqres.in/api-
+2026-05-15 19:40:40 | INFO     | api_client | PUT https://reqres.in/api/users/2 | Body: {'name': 'Jane Smith', 'job': 'Senior QA'}
+2026-05-15 19:40:40 | INFO     | api_client | Response [401]: {"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Create a free key at app.reqres.in and send it as x-api-key.","next_steps":["Go to app.reqres.in/api-
+2026-05-15 19:40:40 | INFO     | api_client | PATCH https://reqres.in/api/users/2 | Body: {'job': 'Lead QA'}
+2026-05-15 19:40:40 | INFO     | api_client | Response [401]: {"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Create a free key at app.reqres.in and send it as x-api-key.","next_steps":["Go to app.reqres.in/api-
+2026-05-15 19:40:40 | INFO     | api_client | DELETE https://reqres.in/api/users/2
+2026-05-15 19:40:40 | INFO     | api_client | Response [401]
+2026-05-15 19:40:40 | INFO     | api_client | POST https://reqres.in/api/register | Body: {'email': 'eve.holt@reqres.in', 'password': 'pistol'}
+2026-05-15 19:40:41 | INFO     | api_client | Response [401]: {"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).
+2026-05-15 19:40:41 | INFO     | api_client | POST https://reqres.in/api/register | Body: {'email': 'eve.holt@reqres.in'}
+2026-05-15 19:40:41 | INFO     | api_client | Response [401]: {"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).
+2026-05-15 19:40:41 | INFO     | api_client | POST https://reqres.in/api/login | Body: {'email': 'eve.holt@reqres.in', 'password': 'cityslicka'}
+2026-05-15 19:40:41 | INFO     | api_client | Response [401]: {"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).
+2026-05-15 19:40:41 | INFO     | api_client | POST https://reqres.in/api/login | Body: {'email': 'eve.holt@reqres.in'}
+2026-05-15 19:40:42 | INFO     | api_client | Response [401]: {"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).
+2026-05-15 19:40:42 | INFO     | api_client | GET https://reqres.in/api/unknown
+2026-05-15 19:40:42 | INFO     | api_client | Response [401]: {"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).
+2026-05-15 19:40:42 | INFO     | api_client | GET https://reqres.in/api/unknown/2
+2026-05-15 19:40:43 | INFO     | api_client | Response [401]: {"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).

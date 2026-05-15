@@ -1,0 +1,120 @@
+name: CI - Playwright Test Suite
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Target environment"
+        required: false
+        default: "default"
+        type: choice
+        options:
+          - default
+          - staging
+          - production
+      markers:
+        description: "Pytest markers (e.g. smoke, regression)"
+        required: false
+        default: ""
+      browser:
+        description: "Browser to use"
+        required: false
+        default: "chromium"
+        type: choice
+        options:
+          - chromium
+          - firefox
+          - webkit
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.12"]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        run: python -m playwright install --with-deps chromium
+
+      - name: Run API tests
+        run: |
+          pytest tests/api -m "api" \
+            --tb=short \
+            --html=reports/api_report.html --self-contained-html \
+            --junitxml=reports/api_results.xml \
+            -v
+        env:
+          ENV: ${{ github.event.inputs.environment || 'default' }}
+
+      - name: Run UI tests
+        run: |
+          MARKER="${{ github.event.inputs.markers }}"
+          MARKER_FLAG=""
+          if [ -n "$MARKER" ]; then
+            MARKER_FLAG="-m $MARKER"
+          fi
+
+          pytest tests/ui $MARKER_FLAG \
+            --tb=short \
+            --html=reports/ui_report.html --self-contained-html \
+            --junitxml=reports/ui_results.xml \
+            -v
+        env:
+          ENV: ${{ github.event.inputs.environment || 'default' }}
+          BROWSER: ${{ github.event.inputs.browser || 'chromium' }}
+          HEADLESS: "true"
+
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
+          path: reports/
+          retention-days: 30
+
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: screenshots/
+          retention-days: 14
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-logs
+          path: logs/
+          retention-days: 14
+
+      - name: Publish test results
+        if: always()
+        uses: dorny/test-reporter@v1
+        with:
+          name: Test Results
+          path: reports/*_results.xml
+          reporter: java-junit
+          fail-on-error: false

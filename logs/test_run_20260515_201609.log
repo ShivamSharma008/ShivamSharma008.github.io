@@ -1,0 +1,85 @@
+2026-05-15 20:16:10 | INFO     | browser_manager | Launching chromium (headless=False)
+2026-05-15 20:16:10 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/posts
+2026-05-15 20:16:10 | INFO     | browser_manager | Launching chromium (headless=False)
+2026-05-15 20:16:10 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/users/1
+2026-05-15 20:16:10 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/comments
+2026-05-15 20:16:10 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/posts/1/comments
+2026-05-15 20:16:10 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/comments
+2026-05-15 20:16:10 | INFO     | api_client | DELETE https://jsonplaceholder.typicode.com/posts/1
+2026-05-15 20:16:10 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/users
+2026-05-15 20:16:10 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/users/1/todos
+2026-05-15 20:16:12 | INFO     | api_client | Response [200]: [
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "id labore ex et quam laborum",
+    "email": "Eliseo@gardner.biz",
+    "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo
+2026-05-15 20:16:12 | INFO     | api_client | Response [200]: [
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "id labore ex et quam laborum",
+    "email": "Eliseo@gardner.biz",
+    "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo
+2026-05-15 20:16:12 | INFO     | api_client | Response [200]: [
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "delectus aut autem",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "quis ut nam facilis et officia qui",
+    "completed":
+2026-05-15 20:16:12 | INFO     | api_client | Response [200]: [
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita 
+2026-05-15 20:16:13 | INFO     | api_client | Response [200]: [
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "id labore ex et quam laborum",
+    "email": "Eliseo@gardner.biz",
+    "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo
+2026-05-15 20:16:13 | INFO     | api_client | Response [200]: {
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipco
+2026-05-15 20:16:13 | INFO     | api_client | Response [200]
+2026-05-15 20:16:13 | INFO     | api_client | Response [200]: [
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwen
+2026-05-15 20:16:28 | INFO     | login_page | Opening login page
+2026-05-15 20:16:28 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 20:16:31 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_navigate_20260515_201631_332935.png
+2026-05-15 20:16:31 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_navigate_20260515_201631_323907.png
+2026-05-15 20:16:32 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_username_20260515_201631_977768.png
+2026-05-15 20:16:32 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_username_20260515_201632_046155.png
+2026-05-15 20:16:32 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_password_20260515_201632_414174.png
+2026-05-15 20:16:32 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_password_20260515_201632_434726.png
+2026-05-15 20:16:33 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_click_login_20260515_201632_769935.png
+2026-05-15 20:16:33 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_click_login_20260515_201632_813186.png
+2026-05-15 20:16:33 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\PASS_test_products_are_displayed_20260515_201633_104086.png
+2026-05-15 20:16:33 | INFO     | browser_manager | Closing browser
+2026-05-15 20:16:33 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_add_to_cart_20260515_201633_202351.png
+2026-05-15 20:16:33 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\PASS_test_add_product_to_cart_20260515_201633_623957.png
+2026-05-15 20:16:33 | INFO     | browser_manager | Closing browser

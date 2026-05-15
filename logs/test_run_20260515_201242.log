@@ -1,0 +1,142 @@
+2026-05-15 20:12:42 | INFO     | browser_manager | Launching chromium (headless=False)
+2026-05-15 20:12:42 | INFO     | browser_manager | Launching chromium (headless=False)
+2026-05-15 20:12:42 | INFO     | browser_manager | Launching chromium (headless=False)
+2026-05-15 20:12:42 | INFO     | browser_manager | Launching chromium (headless=False)
+2026-05-15 20:12:42 | INFO     | browser_manager | Launching chromium (headless=False)
+2026-05-15 20:12:42 | INFO     | browser_manager | Launching chromium (headless=False)
+2026-05-15 20:12:42 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/users/1/todos
+2026-05-15 20:12:45 | INFO     | login_page | Opening login page
+2026-05-15 20:12:45 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 20:12:45 | INFO     | api_client | Response [200]: [
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "delectus aut autem",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "quis ut nam facilis et officia qui",
+    "completed":
+2026-05-15 20:12:45 | INFO     | login_page | Opening login page
+2026-05-15 20:12:45 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 20:12:45 | INFO     | login_page | Opening login page
+2026-05-15 20:12:45 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 20:12:46 | INFO     | login_page | Opening login page
+2026-05-15 20:12:46 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 20:12:46 | INFO     | login_page | Opening login page
+2026-05-15 20:12:46 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 20:12:46 | INFO     | login_page | Opening login page
+2026-05-15 20:12:46 | INFO     | base_page | Navigating to https://www.saucedemo.com/
+2026-05-15 20:12:47 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_navigate_20260515_201246_704852.png
+2026-05-15 20:12:47 | INFO     | login_page | Logging in as: standard_user
+2026-05-15 20:12:47 | INFO     | base_page | Filling 'standard_user' into: //input[@id='user-name']
+2026-05-15 20:12:47 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 20:12:47 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_username_20260515_201247_507651.png
+2026-05-15 20:12:47 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 20:12:47 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 20:12:47 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_navigate_20260515_201246_951355.png
+2026-05-15 20:12:47 | INFO     | login_page | Logging in as: standard_user
+2026-05-15 20:12:47 | INFO     | base_page | Filling 'standard_user' into: //input[@id='user-name']
+2026-05-15 20:12:47 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 20:12:47 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_navigate_20260515_201247_285056.png
+2026-05-15 20:12:47 | INFO     | login_page | Logging in as: standard_user
+2026-05-15 20:12:47 | INFO     | base_page | Filling 'standard_user' into: //input[@id='user-name']
+2026-05-15 20:12:47 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 20:12:47 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_password_20260515_201247_772430.png
+2026-05-15 20:12:47 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 20:12:47 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 20:12:47 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_username_20260515_201247_795950.png
+2026-05-15 20:12:47 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 20:12:47 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 20:12:47 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_username_20260515_201247_838315.png
+2026-05-15 20:12:47 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 20:12:47 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 20:12:48 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_navigate_20260515_201247_586730.png
+2026-05-15 20:12:48 | INFO     | login_page | Logging in as: standard_user
+2026-05-15 20:12:48 | INFO     | base_page | Filling 'standard_user' into: //input[@id='user-name']
+2026-05-15 20:12:48 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 20:12:48 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_password_20260515_201248_007070.png
+2026-05-15 20:12:48 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 20:12:48 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 20:12:48 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_password_20260515_201248_046612.png
+2026-05-15 20:12:48 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 20:12:48 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 20:12:48 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_username_20260515_201248_237762.png
+2026-05-15 20:12:48 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 20:12:48 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 20:12:48 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_click_login_20260515_201248_052617.png
+2026-05-15 20:12:48 | INFO     | inventory_page | Sorting products by: za
+2026-05-15 20:12:48 | INFO     | base_page | Selecting 'za' in: //select[@class='product_sort_container']
+2026-05-15 20:12:48 | DEBUG    | wait_helpers | Waiting for element: //select[@class='product_sort_container']
+2026-05-15 20:12:48 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_navigate_20260515_201248_128193.png
+2026-05-15 20:12:48 | INFO     | login_page | Logging in as: standard_user
+2026-05-15 20:12:48 | INFO     | base_page | Filling 'standard_user' into: //input[@id='user-name']
+2026-05-15 20:12:48 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 20:12:48 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_password_20260515_201248_493112.png
+2026-05-15 20:12:48 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 20:12:48 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 20:12:48 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_navigate_20260515_201248_199234.png
+2026-05-15 20:12:48 | INFO     | login_page | Logging in as: standard_user
+2026-05-15 20:12:48 | INFO     | base_page | Filling 'standard_user' into: //input[@id='user-name']
+2026-05-15 20:12:48 | DEBUG    | wait_helpers | Waiting for element: //input[@id='user-name']
+2026-05-15 20:12:48 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_click_login_20260515_201248_349868.png
+2026-05-15 20:12:48 | INFO     | inventory_page | Adding to cart: Sauce Labs Backpack
+2026-05-15 20:12:48 | INFO     | base_page | Clicking: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 20:12:48 | DEBUG    | wait_helpers | Waiting for element: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 20:12:48 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_click_login_20260515_201248_361385.png
+2026-05-15 20:12:48 | INFO     | inventory_page | Sorting products by: lohi
+2026-05-15 20:12:48 | INFO     | base_page | Selecting 'lohi' in: //select[@class='product_sort_container']
+2026-05-15 20:12:48 | DEBUG    | wait_helpers | Waiting for element: //select[@class='product_sort_container']
+2026-05-15 20:12:48 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_sort_products_20260515_201248_495055.png
+2026-05-15 20:12:48 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_username_20260515_201248_698529.png
+2026-05-15 20:12:48 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 20:12:48 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 20:12:48 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_username_20260515_201248_777131.png
+2026-05-15 20:12:48 | INFO     | base_page | Filling 'secret_sauce' into: //input[@id='password']
+2026-05-15 20:12:48 | DEBUG    | wait_helpers | Waiting for element: //input[@id='password']
+2026-05-15 20:12:49 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_password_20260515_201248_926854.png
+2026-05-15 20:12:49 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 20:12:49 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 20:12:49 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_add_to_cart_20260515_201248_822654.png
+2026-05-15 20:12:49 | INFO     | inventory_page | Adding to cart: Sauce Labs Bike Light
+2026-05-15 20:12:49 | INFO     | base_page | Clicking: //div[text()='Sauce Labs Bike Light']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 20:12:49 | DEBUG    | wait_helpers | Waiting for element: //div[text()='Sauce Labs Bike Light']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 20:12:49 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_sort_products_20260515_201248_804661.png
+2026-05-15 20:12:49 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_enter_password_20260515_201248_995188.png
+2026-05-15 20:12:49 | INFO     | base_page | Clicking: //input[@id='login-button']
+2026-05-15 20:12:49 | DEBUG    | wait_helpers | Waiting for element: //input[@id='login-button']
+2026-05-15 20:12:49 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_click_login_20260515_201248_805660.png
+2026-05-15 20:12:49 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\PASS_test_sort_products_z_to_a_20260515_201248_949863.png
+2026-05-15 20:12:49 | INFO     | browser_manager | Closing browser
+2026-05-15 20:12:49 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_add_to_cart_20260515_201249_209994.png
+2026-05-15 20:12:49 | DEBUG    | wait_helpers | Waiting for element: //span[@class='shopping_cart_badge']
+2026-05-15 20:12:49 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\PASS_test_products_are_displayed_20260515_201249_193617.png
+2026-05-15 20:12:49 | INFO     | base_page | Clicking: //a[@class='shopping_cart_link']
+2026-05-15 20:12:49 | DEBUG    | wait_helpers | Waiting for element: //a[@class='shopping_cart_link']
+2026-05-15 20:12:49 | INFO     | browser_manager | Closing browser
+2026-05-15 20:12:49 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\PASS_test_sort_products_low_to_high_20260515_201249_291123.png
+2026-05-15 20:12:49 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_click_login_20260515_201249_230520.png
+2026-05-15 20:12:49 | INFO     | browser_manager | Closing browser
+2026-05-15 20:12:49 | INFO     | inventory_page | Adding to cart: Sauce Labs Backpack
+2026-05-15 20:12:49 | INFO     | base_page | Clicking: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 20:12:49 | DEBUG    | wait_helpers | Waiting for element: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 20:12:49 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_click_login_20260515_201249_314627.png
+2026-05-15 20:12:49 | INFO     | inventory_page | Adding to cart: Sauce Labs Backpack
+2026-05-15 20:12:49 | INFO     | base_page | Clicking: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 20:12:49 | DEBUG    | wait_helpers | Waiting for element: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'add-to-cart')]
+2026-05-15 20:12:49 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_go_to_cart_20260515_201249_744400.png
+2026-05-15 20:12:50 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_add_to_cart_20260515_201249_781653.png
+2026-05-15 20:12:50 | DEBUG    | wait_helpers | Waiting for element: //span[@class='shopping_cart_badge']
+2026-05-15 20:12:50 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_add_to_cart_20260515_201249_811071.png
+2026-05-15 20:12:50 | INFO     | inventory_page | Removing from cart: Sauce Labs Backpack
+2026-05-15 20:12:50 | INFO     | base_page | Clicking: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'remove')]
+2026-05-15 20:12:50 | DEBUG    | wait_helpers | Waiting for element: //div[text()='Sauce Labs Backpack']/ancestor::div[@class='inventory_item']//button[contains(@id,'remove')]
+2026-05-15 20:12:50 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\PASS_test_add_multiple_products_and_verify_cart_20260515_201249_980676.png
+2026-05-15 20:12:50 | INFO     | browser_manager | Closing browser
+2026-05-15 20:12:50 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\PASS_test_add_product_to_cart_20260515_201250_108788.png
+2026-05-15 20:12:50 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\step_remove_from_cart_20260515_201250_151837.png
+2026-05-15 20:12:50 | INFO     | browser_manager | Closing browser
+2026-05-15 20:12:52 | INFO     | screenshot | Screenshot saved: C:\project python playwright\screenshots\PASS_test_remove_product_from_cart_20260515_201252_471059.png
+2026-05-15 20:12:52 | INFO     | browser_manager | Closing browser

@@ -1,0 +1,103 @@
+2026-05-15 19:42:30 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/posts
+2026-05-15 19:42:31 | INFO     | api_client | Response [200]: [
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita 
+2026-05-15 19:42:31 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/posts/1
+2026-05-15 19:42:31 | INFO     | api_client | Response [200]: {
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nrepr
+2026-05-15 19:42:31 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/posts/99999
+2026-05-15 19:42:31 | INFO     | api_client | Response [404]: {}
+2026-05-15 19:42:31 | INFO     | api_client | POST https://jsonplaceholder.typicode.com/posts | Body: {'title': 'Test Post', 'body': 'Test Body', 'userId': 1}
+2026-05-15 19:42:32 | INFO     | api_client | Response [201]: {
+  "title": "Test Post",
+  "body": "Test Body",
+  "userId": 1,
+  "id": 101
+}
+2026-05-15 19:42:32 | INFO     | api_client | PUT https://jsonplaceholder.typicode.com/posts/1 | Body: {'id': 1, 'title': 'Updated Title', 'body': 'Updated Body', 'userId': 1}
+2026-05-15 19:42:32 | INFO     | api_client | Response [200]: {
+  "id": 1,
+  "title": "Updated Title",
+  "body": "Updated Body",
+  "userId": 1
+}
+2026-05-15 19:42:32 | INFO     | api_client | PATCH https://jsonplaceholder.typicode.com/posts/1 | Body: {'title': 'Patched Title'}
+2026-05-15 19:42:32 | INFO     | api_client | Response [200]: {
+  "userId": 1,
+  "id": 1,
+  "title": "Patched Title",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem
+2026-05-15 19:42:32 | INFO     | api_client | DELETE https://jsonplaceholder.typicode.com/posts/1
+2026-05-15 19:42:33 | INFO     | api_client | Response [200]
+2026-05-15 19:42:33 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/posts
+2026-05-15 19:42:33 | INFO     | api_client | Response [200]: [
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita 
+2026-05-15 19:42:33 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/posts/1/comments
+2026-05-15 19:42:33 | INFO     | api_client | Response [200]: [
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "id labore ex et quam laborum",
+    "email": "Eliseo@gardner.biz",
+    "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo
+2026-05-15 19:42:33 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/comments
+2026-05-15 19:42:33 | INFO     | api_client | Response [200]: [
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "id labore ex et quam laborum",
+    "email": "Eliseo@gardner.biz",
+    "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo
+2026-05-15 19:42:33 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/comments
+2026-05-15 19:42:33 | INFO     | api_client | Response [200]: [
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "id labore ex et quam laborum",
+    "email": "Eliseo@gardner.biz",
+    "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo
+2026-05-15 19:42:33 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/users
+2026-05-15 19:42:33 | INFO     | api_client | Response [200]: [
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwen
+2026-05-15 19:42:33 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/users/1
+2026-05-15 19:42:33 | INFO     | api_client | Response [200]: {
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipco
+2026-05-15 19:42:33 | INFO     | api_client | GET https://jsonplaceholder.typicode.com/users/1/todos
+2026-05-15 19:42:33 | INFO     | api_client | Response [200]: [
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "delectus aut autem",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "quis ut nam facilis et officia qui",
+    "completed":
