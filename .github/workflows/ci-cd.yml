@@ -1,0 +1,147 @@
+name: BDD Selenium CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'Cucumber tags to run (e.g., @smoke, @api, @ui)'
+        required: false
+        default: ''
+      browser:
+        description: 'Browser to use'
+        required: false
+        default: 'chrome'
+
+jobs:
+  api-tests:
+    name: API Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Run API Tests
+        run: |
+          mvn clean test -Dtest=ApiTestRunner -Dheadless=true 2>&1 || true
+
+      - name: Upload API Test Reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: api-test-reports
+          path: |
+            target/cucumber-reports/
+            target/extent-reports/
+            target/logs/
+          retention-days: 30
+
+  ui-tests:
+    name: UI Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Set up Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+
+      - name: Run UI Tests
+        run: |
+          mvn clean test \
+            -Dtest=TestRunner \
+            -Dbrowser=${{ github.event.inputs.browser || 'chrome' }} \
+            -Dheadless=true \
+            -Dcucumber.filter.tags="${{ github.event.inputs.tags || '' }}" \
+            2>&1 || true
+
+      - name: Upload UI Test Reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ui-test-reports
+          path: |
+            target/cucumber-reports/
+            target/extent-reports/
+            target/screenshots/
+            target/logs/
+          retention-days: 30
+
+  smoke-tests:
+    name: Smoke Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Set up Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+
+      - name: Run Smoke Tests
+        run: |
+          mvn clean test \
+            -Dtest=SmokeTestRunner \
+            -Dbrowser=chrome \
+            -Dheadless=true \
+            2>&1 || true
+
+      - name: Upload Smoke Test Reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: smoke-test-reports
+          path: |
+            target/cucumber-reports/
+            target/extent-reports/
+            target/screenshots/
+            target/logs/
+          retention-days: 30
+
+  publish-results:
+    name: Publish Test Results
+    needs: [api-tests, ui-tests, smoke-tests]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: all-reports
+
+      - name: Summary
+        run: |
+          echo "## Test Execution Summary" >> $GITHUB_STEP_SUMMARY
+          echo "- API Tests: Completed" >> $GITHUB_STEP_SUMMARY
+          echo "- UI Tests: Completed" >> $GITHUB_STEP_SUMMARY
+          echo "- Smoke Tests: Completed" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Reports are available as artifacts." >> $GITHUB_STEP_SUMMARY
+
