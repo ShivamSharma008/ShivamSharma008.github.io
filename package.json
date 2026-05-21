@@ -1,0 +1,29 @@
+{
+  "name": "ai-qa-automation",
+  "version": "1.0.0",
+  "description": "AI QA Automation Framework — Playwright + MCP + AI Agents for LLM Testing",
+  "author": "Shivam Sharma <https://www.linkedin.com/in/shivamsharma-sdet/>",
+  "license": "MIT",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "report": "npx playwright show-report reports/html-report",
+    "lint": "eslint src/ tests/",
+    "clean": "rimraf reports/ test-results/"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "openai": "^4.80.1",
+    "zod": "^3.24.2",
+    "winston": "^3.17.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3",
+    "rimraf": "^6.0.1"
+  }
+}
