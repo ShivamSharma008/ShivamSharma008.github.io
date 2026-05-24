@@ -1,0 +1,20 @@
+{
+  "createPost": {
+    "title": "Test Post by Shivam Sharma",
+    "body": "This is a test post created during SDET assessment",
+    "userId": 1
+  },
+  "updatePost": {
+    "title": "Updated Test Post",
+    "body": "This post has been updated",
+    "userId": 1
+  },
+  "loginSuccess": {
+    "username": "emilys",
+    "password": "emilyspass"
+  },
+  "loginFailed": {
+    "username": "invaliduser",
+    "password": "wrongpassword"
+  }
+}
